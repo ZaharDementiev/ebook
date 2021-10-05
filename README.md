@@ -1,2 +1,1 @@
-pandoc
-wsl (для винды)
+pandoc, wsl (для винды)
