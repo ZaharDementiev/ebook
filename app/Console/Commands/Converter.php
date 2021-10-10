@@ -19,14 +19,6 @@ class Converter extends Command
 
     public function handle()
     {
-        shell_exec('C:/xampp/htdocs/ebook/storage/app/converter.sh --path=C:/xampp/htdocs/ebook/storage/app/');
-
-        $dir = 'C:\xampp\htdocs\ebook\storage\app\uploads\math';
-        $files = scandir($dir);
-        foreach ($files as $file) {
-            if (pathinfo($file, PATHINFO_EXTENSION) == '.docx') {
-                FileControlService::removeFile($dir,$file . '.docx');
-            }
-        }
+        exec('su - admin -c "converter --path=/home/admin/web/ebook/storage"');
     }
 }

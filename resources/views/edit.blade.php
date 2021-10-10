@@ -106,7 +106,7 @@
         <p>1) <span class="math inline">\((x + a)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p>
         <p>2) <span class="math inline">\(x = \frac{- b \pm \sqrt{b^{2} - 4\text{ac}}}{2a}\)</span></p>
         <p>3) <span class="math inline">\(A = \pi r^{2}\)</span></p>
-        <p>4) <span class="math inline">\((1 + x)^{n} = 1 + \frac{\text{nx}}{1!} + \frac{n(n - 1)x^{2}}{2!} + \ldots\)</span></p>
+        <p>4) <span class="math inline test">\((1 + x)^{n} = 1 + \frac{\text{nx}}{1!} + \frac{n(n - 1)x^{2}}{2!} + \ldots\)</span></p>
         <p>Dfgfdgdfgdfgdfdfgdf</p>
         <p>;gldf;g</p>
         <p>;ldfg;dfkld;fgk;dflg</p>

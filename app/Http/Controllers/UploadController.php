@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\Convert;
 use App\Models\HTMLBook;
 use App\Services\FileControlService;
 use Illuminate\Http\Request;
@@ -17,5 +18,7 @@ class UploadController extends Controller
             'user_id' => 1,
             'name' => $documentWithoutExt
         ]);
+
+        dispatch(new Convert($document, 'math'));
     }
 }
