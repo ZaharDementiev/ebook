@@ -17,6 +17,7 @@ class CreateAnswersTable extends Migration
             $table->id();
             $table->bigInteger('book_id');
             $table->bigInteger('number');
+            $table->integer('sub_number')->nullable();
             $table->string('answer');
             $table->timestamps();
         });

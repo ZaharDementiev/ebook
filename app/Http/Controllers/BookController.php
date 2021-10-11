@@ -9,8 +9,8 @@ class BookController extends Controller
 {
     public function index(HTMLBook $book)
     {
-        $book = FileControlService::getBodyContent('uploads/math/' . $book->name . '.html');
+        $text = FileControlService::getBodyContent('uploads/math/' . $book->name . '.html');
 
-        return view('book', compact('book'));
+        return view('edit', compact('book', 'text'));
     }
 }

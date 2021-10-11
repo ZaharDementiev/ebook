@@ -12,7 +12,8 @@ class AnswerController extends Controller
         return Answer::create([
             'answer' => $request->input('answer'),
             'number' => $request->input('number'),
-            'book_id' => $request->input('book_id')
+            'book_id' => $request->input('book_id'),
+            'sub_number' => $request->input('sub_number'),
         ]);
     }
 }

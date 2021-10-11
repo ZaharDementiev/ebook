@@ -10,7 +10,14 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body id="top" onload="loadPage()">
+<body id="top">
+
+<style>
+    .teacher-only-input {
+        display: none;
+    }
+</style>
+
 <div class="wrapper row0">
     <div id="topbar" class="hoc clear">
         <div class="fl_left">
@@ -84,41 +91,7 @@
 
 <div class="wrapper bgded overlay"  style="background-color: yellow;">
     <div id="edit-math" class="hoc clear">
-
-        <p>;ldsfk;sldfk;sdlfk</p>
-        <p>Lfksd;lfksd;fksdf</p>
-        <p>Sdkf;slkf;dsflkk</p>
-        <p>#1</p>
-        <p>1) <span class="math inline">\(\left( x + a \right)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p>
-        <p>2) <span class="math inline">\(x = \frac{- b \pm \sqrt{b^{2} - 4\text{ac}}}{2a}\)</span></p>
-        <p>3) <span class="math inline">\(A = \pi r^{2}\)</span></p>
-        <p>4) <span class="math inline">\(\left( 1 + x \right)^{n} = 1 + \frac{\text{nx}}{1!} + \frac{n\left( n - 1 \right)x^{2}}{2!} + \ldots\)</span></p>
-        <p>#2</p>
-        <ol type="1">
-            <li><p><span class="math inline">\(e^{x} = 1 + \frac{x}{1!} + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \ldots,\text{\ \ } - \infty &lt; x &lt; \infty\)</span></p></li>
-            <li><p><span class="math inline">\(f\left( x \right) = a_{0} + \sum_{n = 1}^{\infty}\left( a_{n}\cos\frac{\text{n&#x3C0;x}}{L} + b_{n}\sin\frac{\text{n&#x3C0;x}}{L} \right)\)</span></p></li>
-            <li><p><span class="math inline">\(\left( x + a \right)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p></li>
-            <li><p><span class="math inline">\(x = \frac{- b \pm \sqrt{b^{2} - 4\text{ac}}}{2a}\)</span></p></li>
-        </ol>
-        <p>Dfgjdflkgjfdl;gkdf;lgkd</p>
-        <p>Fdlg;kdf;gldkf;lfkdg</p>
-        <p>Ldfgk;dfgk;dflgkdf;lgk</p>
-        <p>#3</p>
-        <p>1) <span class="math inline">\(\left( x + a \right)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p>
-        <p>2) <span class="math inline">\(x = \frac{- b \pm \sqrt{b^{2} - 4\text{ac}}}{2a}\)</span></p>
-        <p>3) <span class="math inline">\(A = \pi r^{2}\)</span></p>
-        <p>4) <span class="math inline">\(\left( 1 + x \right)^{n} = 1 + \frac{\text{nx}}{1!} + \frac{n\left( n - 1 \right)x^{2}}{2!} + \ldots\)</span></p>
-        <p>Dfgfdgdfgdfgdfdfgdf</p>
-        <p>;gldf;g</p>
-        <p>;ldfg;dfkld;fgk;dflg</p>
-        <p>#4</p>
-        <ol type="1">
-            <li><p><span class="math inline">\(e^{x} = 1 + \frac{x}{1!} + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \ldots,\text{\ \ } - \infty &lt; x &lt; \infty\)</span></p></li>
-            <li><p><span class="math inline">\(f\left( x \right) = a_{0} + \sum_{n = 1}^{\infty}\left( a_{n}\cos\frac{\text{n&#x3C0;x}}{L} + b_{n}\sin\frac{\text{n&#x3C0;x}}{L} \right)\)</span></p></li>
-            <li><p><span class="math inline">\(\left( x + a \right)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p></li>
-            <li><p><span class="math inline">\(x = \frac{- b \pm \sqrt{b^{2} - 4\text{ac}}}{2a}\)</span></p></li>
-        </ol>
-
+        @php echo $text; @endphp
     </div>
 </div>
 
@@ -176,62 +149,50 @@
 <script src="/testdata/layout/scripts/jquery.mobilemenu.js"></script>
 <script src="/testdata/layout/scripts/jquery.placeholder.min.js"></script>
 <script>
+
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
 
-    function loadPage() {
-        $('.teacher-only').each(function(i, obj) {
-            // $('<button onclick="addSample(' + i + ')" class="w3-btn w3-teal ask-input-'+ i +'" style="color:black;"> Задать </button>').insertAfter(obj)
-            // $('<input name="answer" type="text" class="answer-field-'+ i +'" style="color:black; display: none">').insertAfter(obj)
-            // $('<button onclick="saveSample(' + i + ')" class="w3-btn w3-teal answer-input-'+ i +'" style="color:black; display: none"> Подтвердить </button>').insertAfter(obj)
-            // $('<button onclick="cancelSample(' + i + ')" class="w3-btn w3-teal cancel-input-'+ i +'" style="color:black; display: none"> Отмена </button>').insertAfter(obj)
-        });
-
-        // $('.math').each(function(i, obj) {
-        //     $('<button onclick="addSample(' + i + ')" class="w3-btn w3-teal ask-input-'+ i +'" style="color:black;"> Задать </button>').insertAfter(obj)
-        //     $('<input name="answer" type="text" class="answer-field-'+ i +'" style="color:black; display: none">').insertAfter(obj)
-        //     $('<button onclick="saveSample(' + i + ')" class="w3-btn w3-teal answer-input-'+ i +'" style="color:black; display: none"> Подтвердить </button>').insertAfter(obj)
-        //     $('<button onclick="cancelSample(' + i + ')" class="w3-btn w3-teal cancel-input-'+ i +'" style="color:black; display: none"> Отмена </button>').insertAfter(obj)
-        // });
-    }
-
     function addSample(i)
     {
-        $('.ask-input-' + i).hide();
-        $('.answer-field-' + i).show();
-        $('.answer-input-' + i).show();
-        $('.cancel-input-' + i).show();
+        var input = $('.input-' + i);
+        var btn = $('.btn-' + i);
+        input.show();
+        $('<button onclick="cancelSample(' + i + ')" class="w3-btn w3-teal cancel-input-'+ i +'" style="color:black;"> Отмена </button>').insertAfter(btn);
+
+        input.each(function (iter, obj) {
+            $('<button onclick="saveSample(' + i + ', ' + (iter + 1) + ')" class="w3-btn w3-teal save-input" style="color:black;"> Подтвердить </button>').insertAfter(obj);
+        });
+
+        btn.hide();
     }
 
-    function saveSample(i)
+    function saveSample(number, subNumber)
     {
-        $('.ask-input-' + i).show();
-        $('.answer-field-' + i).hide();
-        $('.answer-input-' + i).hide();
-        $('.cancel-input-' + i).hide();
-        storeAnswer(i);
+        storeAnswer(number, subNumber);
     }
 
     function cancelSample(i)
     {
-        $('.ask-input-' + i).show();
-        $('.answer-field-' + i).hide();
-        $('.answer-input-' + i).hide();
-        $('.cancel-input-' + i).hide();
+        $('.input-' + i).hide();
+        $('.save-input').remove();
+        $('.cancel-input-' + i).remove();
+        $('.btn-' + i).show();
     }
 
-    function storeAnswer(id)
+    function storeAnswer(number, subNumber)
     {
         $.ajax({
             type: "POST",
             url: "{{route('answer.store')}}",
             data: {
-                answer: $('.answer-field-' + id).val(),
-                book_id: 6,
-                number: id
+                answer: $('.answer-' + number + '-' + subNumber).val(),
+                book_id: {!! json_encode($book->id) !!},
+                number: number,
+                sub_number: subNumber
             },
         })
     }

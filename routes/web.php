@@ -24,7 +24,3 @@ Route::get('delete', 'App\Http\Controllers\UploadController@delete')->name('dele
 Route::get('book/{book}', 'App\Http\Controllers\BookController@index')->name('book');
 
 Route::post('answer', 'App\Http\Controllers\AnswerController@store')->name('answer.store');
-
-Route::get('test', function () {
-    return view('edit');
-});
