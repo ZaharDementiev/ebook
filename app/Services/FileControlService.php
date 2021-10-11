@@ -53,6 +53,33 @@ class FileControlService
             $mock->appendChild($node);
         }
 
-        return $mock->saveHTML();
+        $page = $mock->saveHTML();
+        $lines = explode("\n", $page);
+        $equation = false;
+        $counterEquation = 0;
+        $editedLines = [];
+
+        foreach ($lines as $line) {
+            $newLine = $line;
+            if (str_contains($line, 'class="math inline"')) {
+                $counterEquation++;
+                $equation = true;
+                $parts = explode('class="math inline"', $newLine);
+                $newLine = $parts[0] . 'class="math inline" data-number-'.$counterEquation . $parts[1];
+            }
+
+            if ($equation && !str_contains($line, 'class="math inline"')) {
+                $equation = false;
+                $newLine = '<button class="teacher-only" type="submit" onclick="storeAnswer('.''.')">Задать</button>';
+                $counterEquation = 0;
+            }
+
+            $editedLines[] = $newLine;
+        }
+
+        dd($editedLines);
+        dd($lines);
+
+        return implode("\n", $editedLines);
     }
 }

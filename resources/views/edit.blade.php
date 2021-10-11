@@ -84,40 +84,42 @@
 
 <div class="wrapper bgded overlay"  style="background-color: yellow;">
     <div id="edit-math" class="hoc clear">
+
         <p>;ldsfk;sldfk;sdlfk</p>
         <p>Lfksd;lfksd;fksdf</p>
         <p>Sdkf;slkf;dsflkk</p>
         <p>#1</p>
-        <p>1) <span class="math inline">\((x + a)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p>
+        <p>1) <span class="math inline">\(\left( x + a \right)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p>
         <p>2) <span class="math inline">\(x = \frac{- b \pm \sqrt{b^{2} - 4\text{ac}}}{2a}\)</span></p>
         <p>3) <span class="math inline">\(A = \pi r^{2}\)</span></p>
-        <p>4) <span class="math inline">\((1 + x)^{n} = 1 + \frac{\text{nx}}{1!} + \frac{n(n - 1)x^{2}}{2!} + \ldots\)</span></p>
+        <p>4) <span class="math inline">\(\left( 1 + x \right)^{n} = 1 + \frac{\text{nx}}{1!} + \frac{n\left( n - 1 \right)x^{2}}{2!} + \ldots\)</span></p>
         <p>#2</p>
         <ol type="1">
             <li><p><span class="math inline">\(e^{x} = 1 + \frac{x}{1!} + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \ldots,\text{\ \ } - \infty &lt; x &lt; \infty\)</span></p></li>
-            <li><p><span class="math inline">\(f(x) = a_{0} + \sum_{n = 1}^{\infty}\left( a_{n}\cos\frac{\text{nπx}}{L} + b_{n}\sin\frac{\text{nπx}}{L} \right)\)</span></p></li>
-            <li><p><span class="math inline">\((x + a)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p></li>
+            <li><p><span class="math inline">\(f\left( x \right) = a_{0} + \sum_{n = 1}^{\infty}\left( a_{n}\cos\frac{\text{n&#x3C0;x}}{L} + b_{n}\sin\frac{\text{n&#x3C0;x}}{L} \right)\)</span></p></li>
+            <li><p><span class="math inline">\(\left( x + a \right)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p></li>
             <li><p><span class="math inline">\(x = \frac{- b \pm \sqrt{b^{2} - 4\text{ac}}}{2a}\)</span></p></li>
         </ol>
         <p>Dfgjdflkgjfdl;gkdf;lgkd</p>
         <p>Fdlg;kdf;gldkf;lfkdg</p>
         <p>Ldfgk;dfgk;dflgkdf;lgk</p>
         <p>#3</p>
-        <p>1) <span class="math inline">\((x + a)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p>
+        <p>1) <span class="math inline">\(\left( x + a \right)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p>
         <p>2) <span class="math inline">\(x = \frac{- b \pm \sqrt{b^{2} - 4\text{ac}}}{2a}\)</span></p>
         <p>3) <span class="math inline">\(A = \pi r^{2}\)</span></p>
-        <p>4) <span class="math inline test">\((1 + x)^{n} = 1 + \frac{\text{nx}}{1!} + \frac{n(n - 1)x^{2}}{2!} + \ldots\)</span></p>
+        <p>4) <span class="math inline">\(\left( 1 + x \right)^{n} = 1 + \frac{\text{nx}}{1!} + \frac{n\left( n - 1 \right)x^{2}}{2!} + \ldots\)</span></p>
         <p>Dfgfdgdfgdfgdfdfgdf</p>
         <p>;gldf;g</p>
         <p>;ldfg;dfkld;fgk;dflg</p>
         <p>#4</p>
         <ol type="1">
             <li><p><span class="math inline">\(e^{x} = 1 + \frac{x}{1!} + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \ldots,\text{\ \ } - \infty &lt; x &lt; \infty\)</span></p></li>
-            <li><p><span class="math inline">\(f(x) = a_{0} + \sum_{n = 1}^{\infty}\left( a_{n}\cos\frac{\text{nπx}}{L} + b_{n}\sin\frac{\text{nπx}}{L} \right)\)</span></p></li>
-            <li><p><span class="math inline">\((x + a)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p></li>
+            <li><p><span class="math inline">\(f\left( x \right) = a_{0} + \sum_{n = 1}^{\infty}\left( a_{n}\cos\frac{\text{n&#x3C0;x}}{L} + b_{n}\sin\frac{\text{n&#x3C0;x}}{L} \right)\)</span></p></li>
+            <li><p><span class="math inline">\(\left( x + a \right)^{n} = \sum_{k = 0}^{n}{\left( \frac{n}{k} \right)x^{k}a^{n - k}}\)</span></p></li>
             <li><p><span class="math inline">\(x = \frac{- b \pm \sqrt{b^{2} - 4\text{ac}}}{2a}\)</span></p></li>
         </ol>
-</div>
+
+    </div>
 </div>
 
 <div class="wrapper row4">
@@ -181,12 +183,19 @@
     });
 
     function loadPage() {
-        $('.math').each(function(i, obj) {
-            $('<button onclick="addSample(' + i + ')" class="w3-btn w3-teal ask-input-'+ i +'" style="color:black;"> Задать </button>').insertAfter(obj)
-            $('<input name="answer" type="text" class="answer-field-'+ i +'" style="color:black; display: none">').insertAfter(obj)
-            $('<button onclick="saveSample(' + i + ')" class="w3-btn w3-teal answer-input-'+ i +'" style="color:black; display: none"> Подтвердить </button>').insertAfter(obj)
-            $('<button onclick="cancelSample(' + i + ')" class="w3-btn w3-teal cancel-input-'+ i +'" style="color:black; display: none"> Отмена </button>').insertAfter(obj)
+        $('.teacher-only').each(function(i, obj) {
+            // $('<button onclick="addSample(' + i + ')" class="w3-btn w3-teal ask-input-'+ i +'" style="color:black;"> Задать </button>').insertAfter(obj)
+            // $('<input name="answer" type="text" class="answer-field-'+ i +'" style="color:black; display: none">').insertAfter(obj)
+            // $('<button onclick="saveSample(' + i + ')" class="w3-btn w3-teal answer-input-'+ i +'" style="color:black; display: none"> Подтвердить </button>').insertAfter(obj)
+            // $('<button onclick="cancelSample(' + i + ')" class="w3-btn w3-teal cancel-input-'+ i +'" style="color:black; display: none"> Отмена </button>').insertAfter(obj)
         });
+
+        // $('.math').each(function(i, obj) {
+        //     $('<button onclick="addSample(' + i + ')" class="w3-btn w3-teal ask-input-'+ i +'" style="color:black;"> Задать </button>').insertAfter(obj)
+        //     $('<input name="answer" type="text" class="answer-field-'+ i +'" style="color:black; display: none">').insertAfter(obj)
+        //     $('<button onclick="saveSample(' + i + ')" class="w3-btn w3-teal answer-input-'+ i +'" style="color:black; display: none"> Подтвердить </button>').insertAfter(obj)
+        //     $('<button onclick="cancelSample(' + i + ')" class="w3-btn w3-teal cancel-input-'+ i +'" style="color:black; display: none"> Отмена </button>').insertAfter(obj)
+        // });
     }
 
     function addSample(i)
